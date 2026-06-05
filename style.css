@@ -1,0 +1,252 @@
+/* ===== Base Styles ===== */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f6f6;
+    color: #232629;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ===== Auth Container ===== */
+.auth-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Header ===== */
+header {
+    background: #f48024;
+    color: white;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.header-container, header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0 12px 0;
+}
+header h1 {
+    font-size: 2.2em;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.user-info {
+    font-size: 1.1em;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background: #fff;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav li {
+    margin: 0;
+}
+nav a {
+    display: block;
+    padding: 15px 24px;
+    color: #555;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: background 0.2s, border-bottom 0.2s;
+}
+nav a.active, nav a:hover {
+    background: #f1f2f3;
+    color: #f48024;
+    border-bottom: 3px solid #f48024;
+}
+
+/* ===== Main Container ===== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.04);
+    border-radius: 6px;
+    padding: 28px 32px 32px 32px;
+}
+
+/* ===== Headings ===== */
+h2 {
+    color: #f48024;
+    margin-top: 0;
+}
+
+/* ===== Forms ===== */
+form input, form textarea, form select, form button {
+    font-family: inherit;
+    font-size: 1em;
+}
+form input, form textarea, form select {
+    width: 100%;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    background: #fafbfc;
+    transition: border 0.2s;
+}
+form input:focus, form textarea:focus, form select:focus {
+    border: 1.5px solid #f48024;
+    outline: none;
+}
+form button {
+    background: #f48024;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+form button:hover {
+    background: #d76d1b;
+}
+
+/* ===== Lists and Cards ===== */
+ul {
+    padding-left: 18px;
+}
+li {
+    margin-bottom: 15px;
+}
+.question-list, .answer-list {
+    list-style: none;
+    padding: 0;
+}
+.question-list li, .answer-list li {
+    background: #f8f9f9;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    padding: 18px 18px 12px 18px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+    border-left: 4px solid #f48024;
+}
+
+/* ===== Auth Styles ===== */
+.auth-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.auth-header h2 {
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    color: #242729;
+}
+.auth-form input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    border: 1px solid #bbc0c4;
+    border-radius: 3px;
+    font-size: 13px;
+    transition: border-color 0.15s ease-in-out;
+}
+.auth-form input:focus {
+    border-color: #6cbbf7;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095ff;
+    color: white;
+    border: 1px solid #07c;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    margin-bottom: 12px;
+}
+.auth-form button:hover {
+    background-color: #0077cc;
+}
+.secondary-btn {
+    background-color: transparent !important;
+    color: #0077cc !important;
+    border: 1px solid #0077cc !important;
+}
+.secondary-btn:hover {
+    background-color: #f0f7fd !important;
+}
+.auth-footer {
+    margin-top: 16px;
+    font-size: 12px;
+    text-align: center;
+}
+.auth-footer a {
+    color: #0077cc;
+    text-decoration: none;
+}
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+.error-box {
+    color: #d1383d;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #d1383d;
+    border-radius: 3px;
+    background-color: #fdf2f2;
+    font-size: 13px;
+    display: none;
+}
+.auth-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.auth-logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* ===== Links ===== */
+a {
+    color: #0074cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #232629;
+    color: #eee;
+    text-align: center;
+    padding: 18px 0 14px 0;
+    font-size: 0.95em;
+    margin-top: 40px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+    .container { padding: 10px; }
+    .header-container, header .container { flex-direction: column; align-items: flex-start; }
+    nav ul { flex-direction: column; }
+    nav a { padding: 12px 10px; }
+}
